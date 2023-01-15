@@ -1,0 +1,44 @@
+.contact {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.contacthead {
+    font-size: 40px;
+}
+
+.contactdetails {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactlistitem {
+    font-size: 30px;
+    padding-top: 20px;
+    width: 600px;
+    text-align: center;
+}
+
+.contactlistitem:nth-child(odd) {
+    color: black;
+    background-color: #eee;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.contactlistitem:nth-child(even) {
+    color: #666;
+    background-color: #eee;
+    border-bottom: 1px solid #000;
+}
+
+.Icon {
+    width: 30px;
+    height: 30px;
+    color: #666;
+}
