@@ -27,15 +27,15 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({storage: storage});
-app.post("/api/upload",upload.single("file"),(req,res) => {
+app.post("/server/upload",upload.single("file"),(req,res) => {
     res.status(200).json("File has been uploaded!");
 });
 
-app.use("/api/auth", authRoute);
-app.use("/api/users", userRoute);
-app.use("/api/posts", postRoute);
-app.use("/api/categories", categoryRoute);
+app.use("/server/auth", authRoute);
+app.use("/server/users", userRoute);
+app.use("/server/posts", postRoute);
+app.use("/server/categories", categoryRoute);
 
-app.listen(process.env.PORT || 4000, () => {
+app.listen(process.env.PORT, () => {
     console.log("Server is running on port 4000!!!");
 })
