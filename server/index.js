@@ -37,5 +37,5 @@ app.use("/server/posts", postRoute);
 app.use("/server/categories", categoryRoute);
 
 app.listen(process.env.PORT, () => {
-    console.log("Server is running on port 4000!!!");
+    console.log(`Server is running on port ${process.env.PORT}!!!`);
 })
